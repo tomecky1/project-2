@@ -182,19 +182,20 @@ article {
     margin: 0 0 96px 0;
 }
 article .work-img {
+    float: left;
     width: 50%;
     height: 100%;
       
 }
 article .work-img::after {
     height: 100%;
-    width: 100%;
+    width: 50%;
     position: absolute;
+    display: block;
     background: $color-green;
     content: '';
     opacity: 0.3;
-    right: -20px;
-    bottom: -20px; 
+    bottom: -10px; 
     opacity: 0.6;
 	transition: all 1s;
     
@@ -206,14 +207,14 @@ article .work-img:hover::after {
 }
 	
 article .work-img img {
-    height: 100%;
+    height: 300px;
     max-width: 100%;
     object-fit: cover;
     
 }
 article .work-description {
     float: right;
-    width: 40%;
+    width: 50%;
     height: 100%;
 }
 article .work-description p:last-of-type {
