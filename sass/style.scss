@@ -1,5 +1,5 @@
 /* Variables */
-$text-light: #ffffff;
+$text-light: #fff;
 $text-main: #34495e;
 
 $color-blue: #3498db;
@@ -75,9 +75,6 @@ section {
         color: $text-light;
         }
 
-a:hover{
-    color: $color-green;
-}
 .navigation ul ul {
     position: absolute;
     left: 50%;
@@ -127,7 +124,7 @@ a:hover{
     font-style: bolder;
 }
 .btn-one:hover {
-    background: linear-gradient(90deg, #ffffff 100%, transparent 50%);
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 100%);
     background-position: 0 100%;
     color: $color-blue;
 }
@@ -196,6 +193,7 @@ article .work-img::after {
     content: '';
     opacity: 0.3;
     bottom: -10px; 
+    left: -10px;
     opacity: 0.6;
 	transition: all 1s;
     
@@ -209,8 +207,7 @@ article .work-img:hover::after {
 article .work-img img {
     height: 300px;
     max-width: 100%;
-    object-fit: cover;
-    
+        
 }
 article .work-description {
     float: right;
@@ -233,6 +230,7 @@ article .work-description p:last-of-type {
     font-size: 20px;
     font-family: $font-title;
     font-weight: bold;
+    color: $text-light;
 }
 .contact form input, textarea{
     width: 100%;
@@ -250,7 +248,7 @@ article .work-description p:last-of-type {
     padding: 16px;
 }
 .contact form .btn-five:hover {
-    background: linear-gradient(90deg, #ffffff 50%, transparent 100%);
+    background-image: linear-gradient(90deg, #ffffff 50%, transparent 100%);
     background-position: 0 100%;
     color: $color-blue;
 }
