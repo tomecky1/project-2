@@ -288,7 +288,10 @@ article .work-description p:last-of-type {
     article .work-img {
     position: relative;
     width: 70%;
-    height: 150px;    
+    height: 300px;    
+    }
+    article .work-img::after {
+        width: 94%;
     }
     article .work-description {
         width: 100%;
