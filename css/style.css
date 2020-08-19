@@ -258,18 +258,94 @@ article .work-description p:last-of-type {
     height: 150px; }
 
   article .work-description {
-    width: 100%; }
+    float: right;
+    width: 50%;
+    height: 100%; }
+  
+  article .work-description p:last-of-type {
+    font-weight: bold; }
+  
+  /* Contact */
+  .contact {
+    flex: 2 0 0;
+    background: #3498db;
+    color: #ffffff; }
+  
+  .contact-data .contact-title {
+    flex: 1 0 0;
+    font-size: 20px;
+    font-family: "Signika", sans-serif;
+    font-weight: bold; }
+  
+  .contact form input, textarea {
+    width: 100%;
+    color: #ffffff;
+    background: #3498db;
+    padding: 0 96px 0 0;
+    text-decoration: none;
+    border: 0;
+    border-bottom: 2px solid #ffffff; }
+  
+  .contact form .btn-five {
+    width: 160px;
+    color: #ffffff;
+    border: 2px solid;
+    padding: 16px; }
+  
+  .contact form .btn-five:hover {
+    background: linear-gradient(90deg, #ffffff 50%, transparent 100%);
+    background-position: 0 100%;
+    color: #3498db; }
+  
+  /* Footer */
+  .footer {
+    display: flex; }
+    .footer ul li {
+      margin: 48px 0;
+      font-size: 0; }
+      .footer ul li a {
+        color: #c0392b; }
+        .footer ul li a i {
+          font-size: 30px;
+          background: #c0392b;
+          color: #ffffff;
+          height: 60px;
+          width: 60px;
+          border-radius: 50%;
+          transition: all 0.5s;
+          display: flex;
+          justify-content: center;
+          align-items: center; }
+  
+  .footer ul li a i:hover {
+    transform: scale(1.2); }
+  
+  /* Media */
+  @media (max-width: 767px) {
+    .wrapper {
+      flex-direction: column; }
+  
+    article .work-img {
+      position: relative;
+      width: 70%;
+      height: 300px; }
 
-  .contact .contact-data {
-    margin: 16px 0 0 0; }
-
-  .wrapper-design, .wrapper-code, .wrapper-marketing {
-    flex: 0 0 33.0%;
-    position: relative;
-    padding: 0 0 16px 0; }
-
-  .wrapper-box {
-    margin: 0; }
-
-  .work {
-    padding: 48px 0; } }
+    article .work-img::after {
+      width: 94%; }      
+  
+    article .work-description {
+      width: 100%; }
+  
+    .contact .contact-data {
+      margin: 16px 0 0 0; }
+  
+    .wrapper-design, .wrapper-code, .wrapper-marketing {
+      flex: 0 0 33.0%;
+      position: relative;
+      padding: 0 0 16px 0; }
+  
+    .wrapper-box {
+      margin: 0; }
+  
+    .work {
+      padding: 48px 0; }}}
